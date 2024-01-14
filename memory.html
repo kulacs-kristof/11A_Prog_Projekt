@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memória játék:</title>
+
+    <link rel="stylesheet" href="jatek.css" />
+  </head>
+  <body id="game">
+    <header>
+      <h1 class="text-center mt-4 mb-2 headTag">Hol van a párja?</h1>
+    </header>
+
+    <section class="container mx-auto">
+      <section class="mx-auto">
+        <div class="row">
+          <div class="col-12 text-center points">
+            <p>Pontszámod: 
+              <span id="point"> 0</span></p>
+          </div>
+        </div>
+
+        <div id="won" class="text-center">
+          <h1>Gratulálok mindegyik kártyát össze párosítottad!</h1>
+          <p>Pontszámod: <span id="finalPoints">0</span></p>
+          <button class="btn" id="playAgain">Találj meg még több növényt!</button>
+        </div>
+
+        <section class="memory-game">
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="kepek/noveny.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="kepek/noveny.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="kepek/noveny1.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="kepek/noveny1.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="kepek/noveny2.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="kepek/noveny2.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="kepek/noveny3.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="kepek/noveny3.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="kepek/noveny4.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="kepek/noveny4.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="kepek/noveny5.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="kepek/noveny5.png" alt="noveny" />
+            <img class="back-face" src="kepek/hát.png" alt="zöld" />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="memória.js"></script>
+  </body>
+</html>
