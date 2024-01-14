@@ -76,7 +76,7 @@ function updateTimer() {
   const elapsedTime = (currentTime - startTime) / 1000;
 
   const formattedTime = elapsedTime.toFixed(2);
-  timerElement.textContent = `Time elapsed: ${formattedTime} seconds`;
+  timerElement.textContent = `Hátralévő idő: ${formattedTime} másodperc`;
 }
 
 function gameOver() {
@@ -202,7 +202,7 @@ function countSeconds() {
 
   const intervalId = setInterval(function () {
     seconds++;
-    console.log(seconds + " seconds have passed.");
+    console.log(seconds + " másodperc telt el.");
 
     if (seconds === 5) {
       YouWin();
