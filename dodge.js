@@ -151,11 +151,11 @@ class Enemy {
   }
 }
 
+const enemies = [];
+
 function spawnEnemy() {
   enemies.push(new Enemy());
 }
-
-const enemies = [];
 
 function setDifficulty(difficultyLevel) {
   difficulty = difficultyLevel;
