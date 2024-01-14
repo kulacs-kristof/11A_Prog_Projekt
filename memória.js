@@ -90,7 +90,6 @@ play.addEventListener("click", playAgain);
 
 cards.forEach((card) => card.addEventListener("click", felfordít));
 
-
 function mozgas() {
   ship.classList.add = "animate__slideOutRight";
 }

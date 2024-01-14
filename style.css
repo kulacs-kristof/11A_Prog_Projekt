@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-image: url("képek/back-ground.png");
+  background-image: url("kepek/back-ground.png");
   background-size: cover;
   background-repeat: repeat;
 }
@@ -10,7 +10,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("képek/enemy.png");
+  background-image: url("kepek/enemy.png");
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-image: url("képek/player.png");
+  background-image: url("kepek/player.png");
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

@@ -5,6 +5,7 @@ let timerElement = document.querySelector("#timer");
 let difficulty = "hard";
 let speed = 10;
 let alertShown = false;
+let alertShown2 = false;
 
 function timerElementChange() {
   timerElement.style.position = "absolute";
@@ -187,6 +188,30 @@ function handleEnemyMovement() {
   }
   gameOver();
 }
+
+function YouWin() {
+  if (!alertShown) {
+    window.alert("Nyertél! Túléltél 5 másodpercet");
+    alertShown = true;
+  }
+  window.location.href = "index.html";
+}
+
+function countSeconds() {
+  let seconds = 0;
+
+  const intervalId = setInterval(function () {
+    seconds++;
+    console.log(seconds + " seconds have passed.");
+
+    if (seconds === 5) {
+      YouWin();
+      clearInterval(intervalId);
+    }
+  }, 1000);
+}
+
+countSeconds();
 
 startTime = Date.now();
 setInterval(spawnEnemy, 1000);
